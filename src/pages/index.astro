@@ -1,0 +1,91 @@
+---	
+import MainLayout from '../layouts/MainLayout.astro';
+const title = 'cdev'
+---
+
+<MainLayout title={title}>
+
+    
+  <div class="absolute top-0 overglow-clip w-full h-[880px] -z-10 ">
+    <div class="h-full w-full bg-server bg-no-repeat"></div>
+  </div>
+  <section class="container mx-auto mt-12">
+    <div class="flex flex-wrap justify-center items-center flex-col">
+      <span style="font-size: 6em; color: #dedeed;">Site in dev...</span>
+      <span style="font-size: 4em; color: #bcbcc2;">ip: curly.team</span>
+ 
+    </div>
+    
+    
+  </section>
+  
+ <!--  <section class="container mx-auto mt-12">
+    <div class="flex flex-wrap justify-center items-center">
+      <div class="flex flex-col w-[620px] h-[450px] gap-y-4">
+        <span class=" text-white font-medium text-6xl leading-[90px] font-['Montserrat']">
+          Классный сервер
+          <span class="font-bold">
+            CurlyVanilla
+          </span>
+          Заходи, поиграем!
+        </span>
+        <span class="text-zinc-400 font-medium text-xl w-2/3 font-['Rubik']">
+          CurlyVanilla - ванильный проект без
+          гриферов и доната.
+        </span>
+        <button class="mc-btn ml-2 mt-2"><span class="font-['Montserrat'] text-white font-bold text-2xl">Играть</span></button>
+      </div>
+      <div class="flex flex-col w-[500px] h-[560px] rounded-3xl bg-card">
+        <div class="w-full flex justify-center flex-col text-center">
+          <img src="./assets/server/tab-logo.png" class="mt-9 w-9/12 mx-auto" alt="">
+          <div class="font-['Minecraft'] text-white text-base mt-5 flex flex-col">
+          <span>
+            Сезон
+            <span class="text-[#E4AB2A]">
+              2
+            </span>
+          </span>
+          <span class="mt-5">
+            Онлайн игроков:
+            <span class="text-[#E4AB2A] player-counter">
+              0
+            </span>
+          </span>
+          <span>
+            В данный момент на сервере:
+          </span>
+          <div class="flex flex-col w-[240px] mx-auto mt-5 gap-y-0.5 max-h-[274px] overflow-auto overflow-x-hidden players-list">
+            <div class="w-full h-5 bg-player flex justify-start hidden"><img src="https://mc-heads.net/avatar/alex/16" class=" mr-2 "> alex</div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class=""></div>
+    </div>
+  </section> -->
+
+</MainLayout>
+
+
+<style>
+
+html {
+    background-color: #111111;
+}
+.mc-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 53px;
+  background-color: #3D874C;
+  box-shadow: 5px 0px #336C42, 0px 5px #214E2C, -5px 0px #336C42, 0px -5px #68CA55, 5px 0px 0 3px black, 0px 5px 0 3px black, -5px 0px 0 3px black, 0px -5px 0 3px black;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url('../assets/fonts/minecraft.ttf') format("truetype");
+}
+
+</style>
